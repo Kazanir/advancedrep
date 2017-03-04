@@ -1,0 +1,113 @@
+{
+    "advancedrep_record": {
+        "name": "advancedrep_record",
+        "columns": {
+            "rep_id": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The ID of the reputation entry this record is linked to.",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "rep_id",
+                "type": "BIGINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "amount": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The actual amount of reputation given.",
+                "decimals": null,
+                "default": "0",
+                "length": 20,
+                "name": "amount",
+                "type": "BIGINT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "message": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "",
+                "length": 512,
+                "name": "message",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "seen": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Whether the rep comment has been seen by the recipient.",
+                "decimals": null,
+                "default": "0",
+                "length": 1,
+                "name": "seen",
+                "type": "TINYINT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "hidden": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Whether the rep comment has been hidden from view by a moderator.",
+                "decimals": null,
+                "default": "0",
+                "length": 1,
+                "name": "hidden",
+                "type": "TINYINT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "rep_id"
+                ]
+            },
+            "seen": {
+                "type": "key",
+                "name": "seen",
+                "length": [
+                    null,
+                    null,
+                    null
+                ],
+                "columns": [
+                    "seen"
+                ]
+            },
+            "hidden": {
+                "type": "key",
+                "name": "hidden",
+                "columns": [
+                    "hidden"
+                ],
+                "length": [
+                    null,
+                    null
+                ]
+            }
+        }
+    }
+}
+
