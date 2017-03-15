@@ -19,7 +19,7 @@ class ips_plugins_setup_install
 	 */
 	public function step1()	{
     if (!\IPS\Db::i()->checkForTable('advancedrep_record'))	{
-      $schema_path = \IPS\ROOT_PATH . '/plugins/advancedrep/data/schema/json';
+      $schema_path = \IPS\ROOT_PATH . '/plugins/advancedrep/data/schema.json';
       $schema	= json_decode(file_get_contents($schema_path), TRUE);
 
 			\IPS\Db::i()->createTable($schema['advancedrep_record']);

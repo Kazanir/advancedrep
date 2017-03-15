@@ -1,0 +1,56 @@
+.ipsAdvancedRepModal {
+  display: none;
+}
+
+.ipsLikeRep .ipsButton_rep + .ipsReputation_count:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.1);
+  top: 0;
+}
+
+html[dir="ltr"] .ipsLikeRep .ipsButton_rep + .ipsReputation_count {
+  margin-left: 10px;
+}
+
+html[dir="ltr"] .ipsLikeRep .ipsButton_rep + .ipsReputation_count:before {
+  left: -8px;
+}
+
+.ipsLikeRep .ipsReputation_count {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.ipsDialog_content .ipsAdvancedRepModal {
+  margin-top: 50%;
+  padding: 10px;
+}
+
+.ipsAdvancedRepModal input#elInput_advancedrep_rep_comment {
+  max-width: none; 
+}
+
+.ipsAdvancedRepModal .ipsButton {
+  width: 230px;
+  margin: 0px 4px;
+}
+
+html[dir="ltr"] .ipsAdvancedRepModal .ipsDialog_close {
+  right: inherit;
+}
+
+.ipsAdvancedRepModal .ipsDialog_close {
+  right: inherit;
+  position: inherit;
+  top: inherit;
+  width: 230px;
+  height: 42px;
+  margin: 0px 4px;
+  background: #e5e5e5;
+}
+
+
