@@ -24,6 +24,7 @@ abstract class hook1 extends _HOOK_CLASS_
     error_log("Made it to our function.");
     $member = $member ?: \IPS\Member::loggedIn();
     $idColumn = static::$databaseColumnId;
+    error_log("Comment: $_GET[advancedrep_comment]");
 
     // Now we have to look up the rep that was just written and write our
     // additional rep data (the real amount based on the repping member's
